@@ -1,0 +1,15 @@
+ 
+---
+# Title: role-mariadb-server
+#
+# Author: bitfinity-nl
+# File: tasks/main.yml
+#
+# Description:
+#  MariaDB Server is the leading open source database.
+
+- name: "Install MariaDB server"
+  import_tasks: mariadb-server.yml
+  when:
+    - ansible_distribution_version == "18.04"
+    - ansible_architecture == "x86_64"
