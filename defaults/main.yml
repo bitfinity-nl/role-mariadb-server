@@ -30,4 +30,4 @@ mariadb_repo_file    : 'maria-db-10.4'
 #   mariadb_administrative_password : 'password'  # Set administrative root password.
 #  
 mariadb_administrative_account  : 'root' 
-mariadb_administrative_password : '{{ def_mysql_pass }}'
+mariadb_administrative_password : '{{ def_mariadb_pass }}'
