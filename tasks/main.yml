@@ -13,9 +13,3 @@
   when:
     - ansible_distribution_version == "18.04"
     - ansible_architecture == "x86_64"
-
-- name: "Install MariaDB server"
-  import_tasks: mariadb-server.yml
-  when:
-    - ansible_distribution_version == "20.04"
-    - ansible_architecture == "x86_64"
